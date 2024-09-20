@@ -79,8 +79,8 @@ function renderTasks(filter = 'all') {
     filteredTasks.forEach(task => {
         // For each task, create a new list item (li) element.
         const taskItem = document.createElement('li');
-        // Set the class of the list item to 'text-decoration-line-through' if the task is completed.
-        taskItem.className = `list-group-item ${task.completed ? 'text-decoration-line-through' : ''}`;
+        // Set the class of the list item.
+        taskItem.className = `list-group-item`;
         // Add task title as text to list item.
         taskItem.textContent = task.title;
 
